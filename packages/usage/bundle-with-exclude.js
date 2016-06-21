@@ -74,7 +74,7 @@ module.exports =
 /* 3 */
 /***/ function(module, exports, __webpack_require__) {
 
-	module.exports = __webpack_require__(!(function webpackMissingModule() { var e = new Error("Cannot find module \"../../../../../packages/beta\""); e.code = 'MODULE_NOT_FOUND'; throw e; }()));
+	module.exports = __webpack_require__(!(function webpackMissingModule() { var e = new Error("Cannot find module \"/Users/thomasreggi/Desktop/webpack-issue/packages/beta\""); e.code = 'MODULE_NOT_FOUND'; throw e; }()));
 
 
 /***/ }

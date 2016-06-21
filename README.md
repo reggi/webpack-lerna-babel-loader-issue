@@ -50,3 +50,23 @@ ERROR in ../alpha/~/@reggi/beta/index.js
 Module not found: Error: Cannot resolve module 'babel' in /Users/thomasreggi/Desktop/webpack-issue/packages/alpha/node_modules/@reggi/beta
  @ ../alpha/~/@reggi/beta/index.js 1:17-82
 ```
+
+## Types of bundles
+
+__Without `babel-loader` excluding `node_modules`__
+
+https://github.com/reggi/webpack-lerna-babel-loader-issue/blob/master/packages/usage/bundle-without-exclude.js#L70
+
+> Cannot find module \"@reggi/beta\"
+
+__With `babel-loader` excluding `node_modules`__
+
+https://github.com/reggi/webpack-lerna-babel-loader-issue/blob/master/packages/usage/bundle-with-exclude.js#L77
+
+> Cannot find module \"/Users/thomasreggi/Desktop/webpack-issue/packages/beta\"
+
+__Without `babel-loader` & switching code to `require`__
+
+https://github.com/reggi/webpack-lerna-babel-loader-issue/blob/master/packages/usage/bundle-without-babel.js#L97
+
+> Includes everything perfectly.
